@@ -58,6 +58,18 @@
             ],
         ];
 
+        for ($x = 0; $x < count($posts); $x++) {
+
+            $post = array_keys($posts); 
+            echo "$post[$x] <br>"; 
+        
+            foreach ($posts[$post[$x]] as $element) {
+                echo $element['title'] .  "<br>";
+                echo $element['author'] . "<br>";
+                echo $element['comment'] . "<br><br>";
+            };
+        }
+
     ?>
     
 </body>
